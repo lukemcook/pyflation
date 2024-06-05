@@ -17,5 +17,6 @@ def inflation_adjustment():
     comparison_year = int(input("Enter the year you would like to adjust the amount to: "))
     inflated_amount = cpi.inflate(initial_amount, comparison_year)
     print(f"In the year {comparison_year}, ${initial_amount} was equivalent to ${inflated_amount:.2f}.")
+    return inflated_amount
 
 inflation_adjustment()
