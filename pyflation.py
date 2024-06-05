@@ -1,6 +1,6 @@
 import cpi
 
-def inflation_adjustment(initial_amount, comparison_year):
+def inflation_adjustment():
     """
     Adjusts the initial amount for inflation to the specified comparison year.
 
@@ -18,6 +18,4 @@ def inflation_adjustment(initial_amount, comparison_year):
     inflated_amount = cpi.inflate(initial_amount, comparison_year)
     print(f"In the year {comparison_year}, ${initial_amount} was equivalent to ${inflated_amount:.2f}.")
 
-initial_amount = 0
-comparison_year = 0
-inflation_adjustment(initial_amount, comparison_year)
+inflation_adjustment()
